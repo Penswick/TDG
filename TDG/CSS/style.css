@@ -1,0 +1,17 @@
+body {
+    background: black;
+    overflow: hidden;
+    font-family: 'Merriweather', serif;
+
+}
+
+#canvas1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 600px;
+    background: rgb(10, 8, 8);
+}
+

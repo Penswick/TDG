@@ -1,0 +1,27 @@
+Feature list for future:
+
+1: Special boss enemy that takes up 3-5 tiles, depending on strength
+2: Chance for enemies to drop a bag of gold, containing random amounts of gold (20-50)
+3: Pause button
+4: Paralax background 
+5: Option to delete/refund soldiers
+
+const solcard1 = { // handles soldiers selection cards
+    x: 10,
+    y: 10,
+    width: 70,
+    height: 85
+}
+const solcard2 = {
+    x: 90,
+    y: 10,
+    width: 70,
+    height: 85
+}
+function selectSoldier(){
+    ctx.lineWidth = 1
+    ctx.fillRect(solcard1.x, solcard1.y, solcard1.width, solcard1.height)
+    ctx.drawImage(balspritesheet, 0, 0, 70, 70, 0, 5, 194/2, 194/2)
+    ctx.fillRect(solcard2.x, solcard2.y, solcard2.width, solcard2.height)
+    ctx.drawImage(cansheet, 0, 0, 194, 194, 0, 5, 194/2, 194/2)
+}
